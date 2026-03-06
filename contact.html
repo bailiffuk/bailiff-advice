@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BailiffAdviceUK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-balance-scale"></i>
+                <span>BailiffAdviceUK</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#steps">Steps</a></li>
+                <li><a href="index.html#debt-types">Debt Types</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html#contact-form" class="btn-nav">Get Help Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero" style="background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%); padding-top: 100px;">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1>Contact BailiffAdviceUK</h1>
+                <p class="lead">Get in touch with our team for immediate assistance with bailiff action. We're here to help you take control of your situation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Our experienced team is ready to help you stop bailiff action and find a solution to your debt problems.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Call Us</h3>
+                                <p>0161 826 1292</p>
+                                <p class="contact-note">Mon-Fri: 9am-6pm, Sat: 10am-4pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Us</h3>
+                                <p>help@bailiffadviceuk.co.uk</p>
+                                <p class="contact-note">Response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Opening Hours</h3>
+                                <p>Monday - Friday: 9am - 6pm</p>
+                                <p>Saturday: 10am - 4pm</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Important Notice</h3>
+                                <p>We are an independent advice service and are NOT bailiffs or enforcement agents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactPageForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactBailiff">Bailiff Company (if known)</label>
+                            <input type="text" id="contactBailiff" name="bailiff" placeholder="Name of bailiff company or enforcement agent">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">How Can We Help? *</label>
+                            <textarea id="contactMessage" name="message" rows="5" required placeholder="Please describe your situation and the bailiff action you're facing..."></textarea>
+                        </div>
+                        
+                        <!-- Hidden fields for Web3Forms -->
+                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="Contact Form Submission">
+                        <input type="hidden" name="from_name" value="BailiffAdviceUK Contact Page">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <p class="form-note">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+                        </div>
+                        
+                        <div id="contactPageResult" class="form-result"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How quickly can you help me?</h3>
+                    <p>We typically respond to inquiries within 1-2 hours during business hours. For urgent cases, call us directly at 0161 826 1292.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Is your advice really free?</h3>
+                    <p>Yes, our initial consultation and advice are completely free. We only charge fees if you choose to proceed with our formal mediation services.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can you stop bailiffs immediately?</h3>
+                    <p>In many cases, we can contact bailiffs the same day and request them to pause action while we negotiate with your creditor.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Do you work on weekends?</h3>
+                    <p>Yes, we're available Saturday 10am-4pm for phone consultations. We monitor emails throughout the weekend for urgent cases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>BailiffAdviceUK</span>
+                    </a>
+                    <p class="footer-about">Independent bailiff advice service helping people stop bailiff action and find affordable debt solutions.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#debt-types">Debt Types</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="#">Complaints Procedure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 0161 826 1292</li>
+                        <li><i class="fas fa-envelope"></i> help@bailiffadviceuk.co.uk</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> BailiffAdviceUK. All rights reserved. Registered in England No: 12345678.</p>
+                <p class="disclaimer">May not be suitable in all circumstances. Our advice is free but fees may apply and your credit rating may be affected if you opt for a debt solution.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/form-handler.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Additional contact page JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize contact page form
+            const contactForm = document.getElementById('contactPageForm');
+            const contactResult = document.getElementById('contactPageResult');
+            
+            if (contactForm) {
+                // Use the same form handler logic from form-handler.js
+                // This ensures consistent behavior across both forms
+            }
+        });
+    </script>
+</body>
+</html>
